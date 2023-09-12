@@ -7,7 +7,7 @@ export default {
 <template>
     <header>
 
-        <nav class="navbar navbar-expand-lg bg-primary">
+        <nav class="navbar navbar-expand-lg bg-dark">
             <div class="container">
 
                 <a class="navbar-brand text-white" href="#">BOOLFOLIO</a>
@@ -21,7 +21,15 @@ export default {
                     <ul class="navbar-nav">
 
                         <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active text-white ms-4" aria-current="page" href="#">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link ms-4" href="#">Features</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link ms-4" href="#">Pricing</a>
                         </li>
 
                     </ul>
