@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    <header>
+    <header class="py-2 border-bottom border-secondary">
 
         <nav class="navbar navbar-expand-lg bg-dark">
             <div class="container">
