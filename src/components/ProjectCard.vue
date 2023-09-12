@@ -11,7 +11,7 @@ export default {
     <h1 class="mb-3">Projects</h1>
 
     <div v-for="project in projects" :key="project.id">
-        <div class="card px-5">
+        <div class="card px-5 mb-5">
             <img :src="project.image" id="project-image" class="card-img-top mt-2 shadow-lg" alt="Project Image">
             <div class="card-body">
                 <h5 class="card-title">{{ project.title }}</h5>

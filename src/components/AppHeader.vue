@@ -8,7 +8,7 @@ export default {
     <header class="py-2 border-bottom border-secondary">
 
         <nav class="navbar navbar-expand-lg bg-dark">
-            <div class="container">
+            <div class="container-fluid px-4">
 
                 <a class="navbar-brand text-white" href="#">BOOLFOLIO</a>
 
