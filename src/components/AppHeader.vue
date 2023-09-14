@@ -10,7 +10,7 @@ export default {
         <nav class="navbar navbar-expand-lg bg-dark">
             <div class="container-fluid px-4">
 
-                <a class="navbar-brand text-white" href="#">BOOLFOLIO</a>
+                <RouterLink class="navbar-brand text-white" to="/">BOOLFOLIO</RouterLink>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,7 +21,8 @@ export default {
                     <ul class="navbar-nav">
 
                         <li class="nav-item">
-                            <a class="nav-link active text-white ms-4" aria-current="page" href="#">Home</a>
+                            <RouterLink class="nav-link active text-white ms-4" aria-current="page" to="/">Home
+                            </RouterLink>
                         </li>
 
                         <li class="nav-item">
