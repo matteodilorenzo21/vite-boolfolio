@@ -7,13 +7,16 @@ export default {
     name: 'HomePage',
     components: { ProjectCard, AppLoader },
 
-    data: () => ({ projects: [], isLoading: false }),
+    data: () => ({
+        projects: [],
+        isLoading: false
+    }),
 
     methods: {
         fetchProjects() {
             this.isLoading = true;
             axios.get(endpoint).then(res => { this.projects = res.data })
-                .catch(err => { console.log(err) })
+                .catch(err => { console.error(err) })
                 .then(() => { this.isLoading = false })
         }
     },
@@ -25,10 +28,11 @@ export default {
 </script>
 
 <template>
-    <AppHeader />
     <main class="container my-3">
         <AppLoader v-if="isLoading" />
-        <ProjectCard v-else :projects="projects" />
+        <div v-else>
+            <ProjectCard v-for="project in projects" :key="project.id" :project="project" />
+        </div>
     </main>
 </template>
 
